@@ -1,0 +1,98 @@
+{
+  "tap_name": "Zapier",
+  "required_config_keys": ["access_token", "start_date"],
+  "page_size": 100,
+  "next_page_key": "links.next",
+  "pagination_key": "offset",
+  "headers": {"Accept": "application/json"},
+  "params": {},
+  "auth_header_key": "Authorization",
+  "auth_config_key": "access_token",
+  "base_url": "https://api.zapier.com/",
+  "streams": [
+    {
+      "name": "apps",
+      "key_properties": ["id"],
+      "replication_method": "FULL_TABLE",
+      "replication_key": null,
+      "path": "v2/apps",
+      "data_key": "data",
+      "parent": null,
+      "children": [],
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/apps/get-apps-[v2]"
+    },
+    {
+      "name": "actions",
+      "key_properties": ["id"],
+      "replication_method": "FULL_TABLE",
+      "replication_key": null,
+      "path": "v2/actions",
+      "data_key": "data",
+      "parent": "apps",
+      "children": [],
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/actions/get-actions"
+    },
+    {
+      "name": "action-runs",
+      "key_properties": ["id"],
+      "replication_method": "FULL_TABLE",
+      "replication_key": null,
+      "path": "v2/action-runs/{id}",
+      "data_key": "data",
+      "parent": "actions",
+      "children": [],
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/action-runs/get-action-runs"
+    },
+    {
+      "name": "categories",
+      "key_properties": ["id"],
+      "replication_method": "FULL_TABLE",
+      "replication_key": null,
+      "path": "v1/categories",
+      "data_key": "objects",
+      "parent": null,
+      "children": [],
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/categories/get-categories"
+    },
+    {
+      "name": "promotions",
+      "key_properties": ["promotion_id"],
+      "replication_method": "FULL_TABLE",
+      "replication_key": null,
+      "path": "v2/promotions/{enrollment_id}",
+      "data_key": null,
+      "parent": null,
+      "children": [],
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/promotions/get-enrollment"
+    },
+    {
+      "name": "zap-templates",
+      "key_properties": ["id"],
+      "replication_method": "FULL_TABLE",
+      "replication_key": null,
+      "path": "v1/zap-templates",
+      "data_key": "steps",
+      "parent": null,
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/zap-templates/get-zap-templates"
+    },
+    {
+      "name": "zaps",
+      "key_properties": ["id"],
+      "replication_method": "INCREMENTAL",
+      "replication_key": "updated_at",
+      "path": "v2/zaps",
+      "data_key": "data",
+      "parent": null,
+      "doc_link": "https://docs.zapier.com/powered-by-zapier/api-reference/zaps/get-zaps-[v2]"
+    }
+  ],
+  "tap_tester_creds": {
+    "access_token": "TAP_ZAPIER_ACCESS_TOKEN"
+  },
+  "author": "Stitch",
+  "third_party_dependencies": [
+      "singer-python==6.1.1",
+      "requests==2.32.4",
+      "backoff==2.2.1"
+  ]
+}
