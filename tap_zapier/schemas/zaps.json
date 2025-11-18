@@ -1,1 +1,94 @@
-{}
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "is_enabled": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "last_successful_run_date": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "updated_at": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "title": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "links": {
+            "type": "object",
+            "properties": {
+                "html_editor": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                }
+            }
+        },
+        "steps": {
+            "type": [
+                "null",
+                "array"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "action": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "authentication": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "inputs": {
+                        "type": "object",
+                        "properties": {
+                            "deal_stage": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            }
+                        }
+                    },
+                    "title": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

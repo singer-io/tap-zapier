@@ -1,1 +1,165 @@
-{}
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "steps": {
+            "type": [
+                "null",
+                "array"
+            ],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "uuid": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "title": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "slug": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "description": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "image": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "hex_color": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "images": {
+                        "type": "object",
+                        "properties": {
+                            "url_16x16": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "url_32x32": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "url_64x64": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            },
+                            "url_128x128": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            }
+                        }
+                    },
+                    "api": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "url": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "label": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    }
+                }
+            }
+        },
+        "title": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "slug": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "status": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description_plain": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description_raw": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "url": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "create_url": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    }
+}

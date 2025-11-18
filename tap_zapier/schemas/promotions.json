@@ -1,1 +1,43 @@
-{}
+{
+    "type": "object",
+    "properties": {
+        "promotion_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "enrollment_date": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "expiration_date": {
+            "type": [
+                "null",
+                "string"
+            ],
+            "format": "date-time"
+        },
+        "task_limit_per_month": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "tasks_used_this_month": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "status": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    }
+}
