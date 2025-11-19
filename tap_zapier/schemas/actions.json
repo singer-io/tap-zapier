@@ -147,13 +147,19 @@
                                 ]
                             },
                             "categories": {
-                                "type": "object",
-                                "properties": {
-                                    "slug": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
+                                "type": [
+                                    "null",
+                                    "array"
+                                ],
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "slug": {
+                                            "type": [
+                                                "null",
+                                                "string"
+                                            ]
+                                        }
                                     }
                                 }
                             },
