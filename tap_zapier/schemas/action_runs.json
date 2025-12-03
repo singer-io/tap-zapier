@@ -1,6 +1,12 @@
 {
     "type": "object",
     "properties": {
+        "id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
         "type": {
             "type": [
                 "null",
@@ -36,7 +42,8 @@
                 "array"
             ],
             "items": {
-                "type": "string"
+                "type": "object",
+                "additionalProperties": true
             }
         }
     }

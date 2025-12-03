@@ -1,6 +1,12 @@
 {
     "type": "object",
     "properties": {
+        "enrollment_id": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
         "promotion_id": {
             "type": [
                 "null",

@@ -1,208 +1,157 @@
 {
     "type": "object",
     "properties": {
-        "links": {
-            "type": "object",
-            "properties": {
-                "next": {
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                },
-                "prev": {
-                    "type": [
-                        "null",
-                        "string"
-                    ]
-                }
-            }
-        },
-        "meta": {
-            "type": "object",
-            "properties": {
-                "count": {
-                    "type": [
-                        "null",
-                        "integer"
-                    ]
-                },
-                "limit": {
-                    "type": [
-                        "null",
-                        "integer"
-                    ]
-                },
-                "offset": {
-                    "type": [
-                        "null",
-                        "integer"
-                    ]
-                }
-            }
-        },
-        "data": {
+        "id": {
             "type": [
                 "null",
-                "array"
-            ],
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
+                "string"
+            ]
+        },
+        "key": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "app": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "type": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "image": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "links": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    }
+                },
+                "action_types": {
+                    "type": [
+                        "null",
+                        "array"
+                    ],
+                    "items": {
                         "type": [
                             "null",
                             "string"
                         ]
-                    },
-                    "key": {
-                        "type": [
-                            "null",
-                            "string"
-                        ]
-                    },
-                    "app": {
+                    }
+                },
+                "title": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "images": {
+                    "type": "object",
+                    "properties": {
+                        "url_16x16": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        "url_32x32": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        "url_64x64": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        "url_128x128": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    }
+                },
+                "hex_color": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
+                },
+                "categories": {
+                    "type": [
+                        "null",
+                        "array"
+                    ],
+                    "items": {
                         "type": "object",
                         "properties": {
-                            "id": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            },
-                            "type": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            },
-                            "image": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            },
-                            "links": {
-                                "type": "object",
-                                "properties": {
-                                    "id": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
-                                    }
-                                }
-                            },
-                            "action_types": {
-                                "type": [
-                                    "null",
-                                    "array"
-                                ],
-                                "items": {
-                                    "type": [
-                                        "null",
-                                        "string"
-                                    ]
-                                }
-                            },
-                            "title": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            },
-                            "images": {
-                                "type": "object",
-                                "properties": {
-                                    "url_16x16": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
-                                    },
-                                    "url_32x32": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
-                                    },
-                                    "url_64x64": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
-                                    },
-                                    "url_128x128": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
-                                    }
-                                }
-                            },
-                            "hex_color": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            },
-                            "categories": {
-                                "type": [
-                                    "null",
-                                    "array"
-                                ],
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "slug": {
-                                            "type": [
-                                                "null",
-                                                "string"
-                                            ]
-                                        }
-                                    }
-                                }
-                            },
-                            "description": {
+                            "slug": {
                                 "type": [
                                     "null",
                                     "string"
                                 ]
                             }
                         }
-                    },
-                    "type": {
-                        "type": [
-                            "null",
-                            "string"
-                        ]
-                    },
-                    "action_type": {
-                        "type": [
-                            "null",
-                            "string"
-                        ]
-                    },
-                    "is_instant": {
-                        "type": [
-                            "null",
-                            "boolean"
-                        ]
-                    },
-                    "title": {
-                        "type": [
-                            "null",
-                            "string"
-                        ]
-                    },
-                    "description": {
-                        "type": [
-                            "null",
-                            "string"
-                        ]
                     }
+                },
+                "description": {
+                    "type": [
+                        "null",
+                        "string"
+                    ]
                 }
             }
+        },
+        "type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "action_type": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "is_instant": {
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        "title": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "type": [
+                "null",
+                "string"
+            ]
         }
     }
 }
