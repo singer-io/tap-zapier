@@ -1,1 +1,53 @@
-{}
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": [
+                "null",
+                "integer"
+            ]
+        },
+        "title": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "slug": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "description": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "url": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "type_of": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "featured_entry_slug": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "role": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    }
+}
